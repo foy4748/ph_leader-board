@@ -83,7 +83,6 @@ hr{
 
 .thumbnail > img{
     width: 16rem;
-    height: 16rem;
 }
 
 .blog-title{
@@ -103,4 +102,21 @@ hr{
 /* _------ Latest Courses ------_ */
 .latest-courses{
     padding: 2rem 2rem;
+}
+
+.course-thumbnail > img{
+    width:14rem;
+    height: 6.5rem;
+}
+
+.info{
+    display:flex;
+}
+
+/* Customizing Font Awesome */
+.fa-star.filled{
+    color: gold;
+}
+.fa-star.empty{
+    color: #AEAEAE;
 }
