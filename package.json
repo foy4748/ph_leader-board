@@ -1,0 +1,14 @@
+{
+	"name": "ph_leader-board",
+	"version": "1.0.0",
+	"description": "Practicing Responsive Design with Flexbox, Grid and Media Query. Design Link: https://github.com/ProgrammingHero1/leader-board.git ",
+	"main": "index.js",
+	"scripts": {
+		"start": "lite-server"
+	},
+	"author": "Programming Hero, foy4748",
+	"license": "ISC",
+	"devDependencies": {
+		"lite-server": "^2.6.1"
+	}
+}
