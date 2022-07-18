@@ -24,6 +24,12 @@ main{
 
 .container > h1 {
     color: #562EFF;
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+hr{
+    margin-top:30px;
 }
 
 /* Players Section Style Rules */
@@ -34,12 +40,16 @@ main{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-column-gap: 3rem;
-    grid-row-gap: 0.5rem;
+    grid-row-gap: 1.5rem;
 }
 
 .player{
     display: flex;
     align-items:center;
+}
+
+.player > h2{
+    font-size: 1.125rem;
 }
 
 .player > img {
