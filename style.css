@@ -2,6 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
 
 /* Common & Utility Style Rules */
+:root{
+    --main-color: #562EFF;
+    --main-color-shade: #9F9F9F;
+}
+
 body{
     font-family: 'Poppins','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #F3F1FF;
@@ -23,13 +28,14 @@ main{
 }
 
 .container > h1 {
-    color: #562EFF;
+    color: var(--main-color);
     margin-top: 0;
     font-size: 1.5rem;
 }
 
 hr{
     margin-top:30px;
+    margin-bottom:30px;
 }
 
 /* Players Section Style Rules */
@@ -56,4 +62,32 @@ hr{
     width: 56px;
     height: 56px;
     margin-inline-end: 1rem;
+}
+
+/* Top Blogs Part */
+.blog{
+    display: flex;
+}
+
+.titles {
+    margin-inline-start: 1rem;
+}
+
+.thumbnail > img{
+    width: 16rem;
+    height: 16rem;
+}
+
+.blog-title{
+    font-size: 1.25rem;
+}
+
+.author {
+    color: var(--main-color-shade);
+    font-size: 1rem;
+}
+
+.author-link {
+    text-decoration: none;
+    color: var(--main-color);
 }
