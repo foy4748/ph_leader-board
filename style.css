@@ -1,7 +1,40 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+/* Common & Utility Style Rules */
+body{
+    font-family: 'Poppins','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #F3F1FF;
+    margin: 0;
+    padding: 0;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+main{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content:center;
+}
+
+.container{
+    background-color: #FFFFFF;
+    width: 54.375rem;
+}
+
+.container > h1 {
+    color: #562EFF;
+}
+
 /* Players Section Style Rules */
+.players-section{
+    padding: 2rem 2rem;
+}
 .players{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 3rem;
+    grid-row-gap: 0.5rem;
 }
 
 .player{
@@ -12,4 +45,5 @@
 .player > img {
     width: 56px;
     height: 56px;
+    margin-inline-end: 1rem;
 }
