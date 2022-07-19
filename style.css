@@ -14,6 +14,7 @@ body{
     padding: 0;
     max-width: 1920px;
     margin: 0 auto;
+    
 }
 
 main{
@@ -27,7 +28,9 @@ main > section + section {
 
 .container{
     background-color: #FFFFFF;
+    /*
     width: 54.375rem;
+    */
 }
 
 .container > h1 {
@@ -39,6 +42,76 @@ main > section + section {
 hr{
     margin-top:30px;
     margin-bottom:30px;
+}
+/*Header Section
+ * Navigation section 
+ *--------------------
+ */
+.header{
+    background-color: var(--main-color);
+    /*
+    width: 54.375rem;
+    */
+    width: 100vw;
+    margin-bottom: 3rem;
+}
+
+.nav{
+    display:flex;
+    justify-content: space-between;
+    margin: 0 4rem;
+}
+
+.logo > img{
+    width: 100%;
+    max-width:4rem;
+}
+
+.brand{
+    display:flex;
+    align-items:center;
+}
+
+.brand-name{
+    margin-inline-start: 1rem;
+    color: white;
+}
+.navigation{
+    display:flex;
+    align-items:center;
+}
+
+.links >a{
+    color: white;
+    text-decoration:none;
+    margin: 0 1rem;
+}
+
+.links >a:visited{
+    color: white;
+    text-decoration:none;
+}
+
+.user{
+    margin: 0 1rem;
+}
+
+.user > img{
+    width:100%;
+}
+
+.navMobile{
+    display:none;
+    margin: 0 2rem;
+    justify-content: space-between;
+    color: white;
+}
+
+.navigation > .hamburger {
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid white;
+    border-radius: 1rem;
 }
 
 /* Players Section Style Rules */
@@ -82,7 +155,7 @@ hr{
 }
 
 .thumbnail > img{
-    width: 16rem;
+    width: 100%;
 }
 
 .blog-title{
@@ -100,17 +173,41 @@ hr{
 }
 
 /* _------ Latest Courses ------_ */
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 2.5rem;
+    grid-row-gap: 1.0rem;
+}
+
+.course {
+    padding: 1rem;
+    box-shadow: 0 0.5rem 0.5rem 0.25rem #80808025;
+    border-radius: 1rem;
+}
 .latest-courses{
     padding: 2rem 2rem;
 }
 
 .course-thumbnail > img{
-    width:14rem;
-    height: 6.5rem;
+    /*
+    *width:14rem;
+    *height: 6.5rem;
+    */
+    width: 100%;	
 }
 
 .info{
     display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.course-duration{
+    color: indianred;
+    background-color: #fa807280;
+    border-radius: 2rem;
+    padding: 0.25rem 0.50rem;
 }
 
 /* Customizing Font Awesome */
@@ -119,4 +216,57 @@ hr{
 }
 .fa-star.empty{
     color: #AEAEAE;
+}
+
+/* Media Queries  
+ * -------------
+ */
+/* For Tablet Devices */
+@media screen and  (max-width: 992px) {
+    .header{
+	margin-bottom:0;
+    }
+
+    .players, .courses, .blogs{
+	grid-template-columns: repeat(2,1fr);
+    }
+
+    .blog{
+	flex-flow: column wrap;
+	align-items:center;
+    }
+    
+    .nav{
+	display:none;
+    }
+
+    .navMobile{
+	display: flex;
+    }
+
+}
+
+/* For Mobile Devices */
+@media screen and (max-width: 768px)
+{
+    .header{
+	margin-bottom:0;
+    }
+
+    .players, .courses, .blogs{
+	grid-template-columns: repeat(1,1fr);
+    }
+
+    .blog{
+	flex-flow: column wrap;
+	align-items:center;
+    }
+    
+    .nav{
+	display:none;
+    }
+
+    .navMobile{
+	display: flex;
+    }
 }
